@@ -14,3 +14,8 @@ jobs:
 
             - name: Decir adios
               run: echo ADIOS
+            - name: Notificar despliegue a la API
+              run: |
+                curl -X POST -H "Content-Type: application/json" \
+                -d '{"action": "completed"}' \
+                http://localhost:8080/webhook
