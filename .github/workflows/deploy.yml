@@ -18,4 +18,4 @@ jobs:
               run: |
                 curl -X POST -H "Content-Type: application/json" \
                 -d '{"action": "completed"}' \
-                http://localhost:8080/webhook
+                https://92fb-2806-262-3404-5fa-b5ac-c022-3351-f0de.ngrok-free.app/webhook
